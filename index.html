@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator - by Noé Mercourt</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div class="result_container">
+          <span class="third_text"></span>
+          <span class="second_text"></span>
+          <span class="first_text">0</span>
+        </div>
+        <div class="buttons_container">
+          <button
+            onclick="buttonClick(this)"
+            data-action="clear"
+            class="buttons_block dark"
+          >
+            <span>C</span>
+          </button>
+          <button
+            onclick="buttonClick(this)"
+            data-action="delete"
+            class="buttons_block dark"
+          >
+            <span>⌫</span>
+          </button>
+          <button
+            onclick="buttonClick(this)"
+            data-action="pourcentage"
+            class="buttons_block dark"
+          >
+            <span>%</span>
+          </button>
+          <button
+            onclick="buttonClick(this)"
+            data-action="divide"
+            class="buttons_block dark"
+          >
+            <span>/</span>
+          </button>
+
+          <button onclick="buttonClick(this)" class="buttons_block">
+            <span>7</span>
+          </button>
+          <button onclick="buttonClick(this)" class="buttons_block">
+            <span>8</span>
+          </button>
+          <button onclick="buttonClick(this)" class="buttons_block">
+            <span>9</span>
+          </button>
+          <button
+            onclick="buttonClick(this)"
+            data-action="multiply"
+            class="buttons_block dark"
+          >
+            <span>x</span>
+          </button>
+
+          <button onclick="buttonClick(this)" class="buttons_block">
+            <span>4</span>
+          </button>
+          <button onclick="buttonClick(this)" class="buttons_block">
+            <span>5</span>
+          </button>
+          <button onclick="buttonClick(this)" class="buttons_block">
+            <span>6</span>
+          </button>
+          <button
+            onclick="buttonClick(this)"
+            data-action="subtract"
+            class="buttons_block dark"
+          >
+            <span>-</span>
+          </button>
+
+          <button onclick="buttonClick(this)" class="buttons_block">
+            <span>1</span>
+          </button>
+          <button onclick="buttonClick(this)" class="buttons_block">
+            <span>2</span>
+          </button>
+          <button onclick="buttonClick(this)" class="buttons_block">
+            <span>3</span>
+          </button>
+          <button
+            onclick="buttonClick(this)"
+            data-action="add"
+            class="buttons_block dark"
+          >
+            <span>+</span>
+          </button>
+
+          <button class="buttons_block">
+            <span></span>
+          </button>
+          <button onclick="buttonClick(this)" class="buttons_block">
+            <span>0</span>
+          </button>
+          <button
+            onclick="buttonClick(this)"
+            data-action="decimal"
+            class="buttons_block"
+          >
+            <span>,</span>
+          </button>
+          <button
+            onclick="buttonClick(this)"
+            data-action="calculate"
+            class="buttons_block dark"
+          >
+            <span>=</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

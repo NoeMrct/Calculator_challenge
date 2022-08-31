@@ -1,0 +1,121 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Eudoxus;
+  src: url("../fonts/EudoxusSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: Jakarta;
+  src: url("../fonts/PlusJakartaText-Regular.otf");
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 750px;
+  width: 400px;
+  border-radius: 35px;
+  background-color: #f1f3f6;
+  filter: drop-shadow(0 0 0.5rem #e5eaea);
+}
+
+.result_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 150px;
+  width: 265px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  background: #f1f3f6;
+  box-shadow: inset 8px 8px 20px #e5e7ea, inset -8px -8px 20px #fdffff;
+}
+
+.result_container span {
+  font-size: 2em;
+  font-weight: 600;
+  color: #121212;
+}
+
+.result_container span.second_text,
+.result_container span.third_text {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: grey;
+}
+
+.buttons_container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 75px 75px 75px 75px;
+  grid-template-rows: 75px 75px 75px 75px 75px;
+  margin: 40px 25px;
+}
+
+.buttons_block {
+  width: 75px;
+  height: 75px;
+  border: 0px;
+  border-radius: 15px;
+  background: #f1f3f6;
+  box-shadow: 5px 5px 10px #d9dbdd, -5px -5px 10px #ffffff;
+  cursor: pointer;
+  color: #121212;
+  font-size: 1.5em;
+}
+
+.buttons_block.dark {
+  background: #121212;
+  box-shadow: 0px;
+  color: #fafafa;
+}
+
+@media screen and (min-width: 320px) {
+  .content {
+    transform: scale(0.75);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .content {
+    transform: scale(1);
+  }
+}
