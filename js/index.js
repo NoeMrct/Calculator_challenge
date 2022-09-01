@@ -68,6 +68,9 @@ function buttonClick(e) {
     operator = action;
     display.textContent = firstValue + " / ";
   } else if (action === "decimal") {
+    if (operator) {
+      secondValue += ".";
+    }
     display.textContent = displayedNum + ".";
   } else if (action === "pourcentage") {
     display.textContent = displayedNum / 100;
@@ -89,6 +92,8 @@ function buttonClick(e) {
     }
     display.textContent = displayedNum.slice(0, -1);
   } else if (action === "calculate") {
+    console.log(firstValue);
+    console.log(secondValue);
     results = calculate(firstValue, operator, secondValue);
     thirdText.textContent = "";
     secondText.textContent = displayedNum;
