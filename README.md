@@ -1,4 +1,4 @@
-# calculator_challenge
+# Calculator_challenge
 I set myself the goal of making a calculator in a limited time (four hours).
 
 Live version : https://calculator-noe.netlify.app/
